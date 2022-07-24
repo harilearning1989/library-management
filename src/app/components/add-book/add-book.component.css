@@ -1,0 +1,29 @@
+mat-card{
+  width: 500px;
+  height: 600px;
+  vertical-align:middle;
+  top: 100px;
+  left: 600px;
+  outline: 2px solid lightblue;
+  position: fixed;
+  align-content: center;
+}
+
+mat-card-header{
+  background: lightblue;
+  padding: 10px;
+}
+
+mat-card-content{
+  padding: 10px;
+}
+
+.my-form{
+  min-width: 150px;
+  max-width: 500px;
+  width: 100%;
+}
+
+.example-full-width {
+  width: 100%;
+}
