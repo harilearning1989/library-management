@@ -1,0 +1,22 @@
+mat-card{
+  width: 400px;
+  height: 300px;
+  vertical-align:middle;
+  top: 100px;
+  left: 700px;
+  outline: 2px solid lightblue;
+  position: fixed;
+  align-content: center;
+}
+
+mat-card-header{
+  background: lightblue;
+  padding: 25px;
+}
+
+mat-card-content{
+  padding: 10px;
+}
+.loginBut{
+  left: 100px;
+}

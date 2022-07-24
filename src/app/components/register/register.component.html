@@ -1,0 +1,80 @@
+<div style="width: 100%;height: 100%;background-color: #c2c3c4">
+
+<mat-card>
+  <mat-card-header>
+    <mat-card-title>Register</mat-card-title>
+  </mat-card-header>
+  <mat-card-content>
+    <form>
+      <table class="example-full-width" cellspacing="0">
+        <tr>
+          <td>
+            <mat-form-field class="example-full-width">
+              <mat-label>First Name</mat-label>
+              <input  matInput  placeholder="First name"  name="firstName"  required>
+            </mat-form-field>
+          </td>
+        </tr>
+        <tr>
+          <td><mat-form-field class="example-full-width">
+            <mat-label>Last Name</mat-label>
+            <input  matInput  placeholder="Last Name" name="lastName"  required>
+          </mat-form-field></td>
+        </tr>
+        <tr>
+          <td><mat-form-field class="example-full-width">
+            <mat-label>User Name</mat-label>
+            <input  matInput  placeholder="Last Name" name="userName"  required>
+          </mat-form-field></td>
+        </tr>
+        <tr>
+          <td><mat-form-field class="example-full-width">
+            <mat-label>Password</mat-label>
+            <input  matInput  placeholder="Password"  name="password">
+          </mat-form-field></td>
+        </tr>
+        <tr>
+          <td><mat-form-field class="example-full-width">
+            <mat-label>Email</mat-label>
+            <input  matInput  placeholder="Email" name="email">
+          </mat-form-field></td>
+        </tr>
+        <tr>
+          <td>
+            <mat-form-field appearance="fill" class="example-full-width">
+              <mat-label>Gender</mat-label>
+              <select matNativeControl required>
+                <option>Select</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Others</option>
+              </select>
+            </mat-form-field>
+          </td>
+        </tr>
+        <tr>
+          <td><mat-form-field class="example-full-width">
+            <mat-label>Address</mat-label>
+            <input  matInput  placeholder="Address" name="address"  required>
+          </mat-form-field></td>
+        </tr>
+        <tr>
+          <td><mat-form-field class="example-full-width">
+            <mat-label>Date of Birth</mat-label>
+            <input matInput [matDatepicker]="picker" placeholder="Choose a date">
+            <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+            <mat-datepicker #picker></mat-datepicker>
+          </mat-form-field></td>
+        </tr>
+        <br/>
+        <tr>
+          <td>
+            <button style="left: 101px" mat-raised-button color="primary">Register</button>
+          </td>
+        </tr>
+      </table>
+    </form>
+
+  </mat-card-content>
+</mat-card>
+</div>
